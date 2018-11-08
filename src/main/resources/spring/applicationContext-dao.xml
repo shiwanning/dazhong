@@ -46,7 +46,7 @@
     	<!-- 扫描mybatis核心配置文件 -->
     	<property name="configLocation" value="classpath:spring/mybatis.xml"/>
     	<!-- 扫描java bean，自动使用别名 -->
-    	<property name="typeAliasesPackage" value="org.richard.bean"/>
+    	<property name="typeAliasesPackage" value="com.richard.bean"/>
     	<!-- 扫描mybatis的SQL配置文件 -->
     	<!--<property name="mapperLocations" value="classpath:mapper/*.xml"/>-->
     </bean>
@@ -54,6 +54,6 @@
     <!-- 扫描Dao接口包 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
     	<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
-    	<property name="basePackage" value="org.richard.dao"/>
+    	<property name="basePackage" value="com.richard.dao"/>
     </bean>
 </beans>
